@@ -1,0 +1,179 @@
+.Blogs-heading {
+  font-size: 42px;
+}
+
+#banner-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article_heading {
+  font-size: 52px;
+  margin-bottom: 80px;
+  margin-left: 40px;
+}
+
+.article_heading-logo {
+  height: 40px;
+  margin-right: -5px;
+  margin-top: -8px;
+}
+
+.card-number {
+  font-size: 42px;
+  font-weight: 500;
+  color: #b4b4b4;
+  height: 35px;
+  width: 35px;
+  margin-right: 20px;
+  margin-top: -15px;
+  letter-spacing: 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: auto;
+}
+
+.designation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.designation-heading {
+  margin: 0 0 0 20px;
+  font-size: 32px;
+}
+
+.designation-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid rgb(255, 218, 98);
+}
+.card-description {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 20px;
+  font-size: 16px;
+  color: #6b6b6b;
+}
+
+.dot {
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.date_added {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.date_added span {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .article-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 10px;
+    row-gap: 50px;
+  }
+  .article_heading {
+    font-size: 32px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .Blogs-heading {
+    font-size: 32px;
+  }
+}
+
+/* template work */
+
+.Article_content {
+  width: max-content;
+  margin: auto;
+}
+
+.top_heading {
+  font-size: 20px;
+  margin: 30px 0px;
+}
+
+.article_display {
+  max-width: 600px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article_display img {
+  width: 600px;
+  margin: auto;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.article_display h3 {
+  text-align: center;
+}
+
+.article_display p {
+  text-align: justify;
+}
+
+@media (max-width: 920px) {
+  .article_display img {
+    width: 80%;
+    margin: auto;
+  }
+  .article_display {
+    width: 350px;
+    justify-content: center;
+  }
+  .card-heading {
+    font-size: 16px;
+  }
+  .designation {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .card-heading {
+    margin: auto;
+  }
+  .date_added {
+    margin: auto;
+  }
+  .article_display {
+    text-align: center;
+  }
+  .article_display p {
+    text-align: center;
+  }
+  .top_heading {
+    margin: 0 0 10px 0;
+  }
+}
+#back {
+  padding-top: 20px;
+}
+
+.follow_me {
+  text-decoration: none;
+  color: blue;
+  margin-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
