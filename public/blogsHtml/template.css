@@ -132,8 +132,14 @@
 .article_display p {
   text-align: justify;
 }
+.hidden {
+  display: none;
+}
 
 @media (max-width: 920px) {
+  .hidden {
+    display: inline;
+  }
   .article_display img {
     width: 80%;
     margin: auto;
@@ -144,6 +150,7 @@
   }
   .card-heading {
     font-size: 16px;
+    text-align: center;
   }
   .designation {
     flex-direction: column;
@@ -159,9 +166,7 @@
   .article_display {
     text-align: center;
   }
-  .article_display p {
-    text-align: center;
-  }
+
   .top_heading {
     margin: 0 0 10px 0;
   }
