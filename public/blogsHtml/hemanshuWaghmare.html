@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+				initial-scale=1"
+    />
+
+    <link rel="icon" href="../image/ACM-Logo.ico" />
+    <title>ACM-BLOGS</title>
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="../img/favicon.png" rel="icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./template.css" />
+  
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+    p, h1, h2 , h3 , h4, h6, span , i , b{
+      font-family: 'Open Sans', sans-serif;
+    }
+    .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .carousel {
+      max-width: 1000px; /* set the maximum width of the carousel */
+      margin: auto;
+      /* background-color: red; */
+    }
+    .bxl-twitter:before {
+      content: '\e982';
+    }
+
+    #image-container:hover:before {
+      opacity: 1;
+    }
+
+    #back {
+      background: white;
+    }
+
+    .copy-text {
+      position: relative;
+      padding: 5px 10px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: flex;
+      width: 80%;
+      margin: auto;
+      justify-content: space-between;
+
+    }   .copy-text1 {
+      position: relative;
+      padding: 5px 10px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: flex;
+      width: 80%;
+      margin: auto;
+      justify-content: space-between;
+
+    }
+
+    @media (max-width: 800px) {
+      .copy-text {
+        width: 100%;
+      }
+      
+      .copy-text1 {
+        width: 100%;
+      }
+    }
+
+    .copy-text input.text {
+      padding: 10px;
+      font-size: 18px;
+      color: #555;
+      border: none;
+      outline: none;
+      width: 250px;
+    }
+    
+    .copy-text1 input.text1 {
+      padding: 10px;
+      font-size: 18px;
+      color: #555;
+      border: none;
+      outline: none;
+      width: 250px;
+    } 
+    
+    .copy-text textarea.text2 {
+      padding: 3px;
+      font-size: 18px;
+      color: #555;
+      border: none;
+      outline: none;
+      width: 250px;
+      height : 60px
+    }
+    .copy-text button {
+      padding: 10px 15px;
+      background: #5784f5;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      cursor: pointer;
+    } .copy-text1 button {
+      padding: 10px 15px;
+      background: #5784f5;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .copy-text button:active {
+      background: #809ce2;
+    }.copy-text1 button:active {
+      background: #809ce2;
+    }
+    .copy-text button:before {
+      content: 'Copied';
+      position: absolute;
+      top: -45px;
+      right: 0px;
+      background: #5c81dc;
+      padding: 8px 10px;
+      border-radius: 20px;
+      font-size: 15px;
+      display: none;
+    }  .copy-text1 button:before {
+      content: 'Copied';
+      position: absolute;
+      top: -45px;
+      right: 0px;
+      background: #5c81dc;
+      padding: 8px 10px;
+      border-radius: 20px;
+      font-size: 15px;
+      display: none;
+    }
+    .copy-text button:after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      right: 25px;
+      width: 10px;
+      height: 10px;
+      background: #5c81dc;
+      transform: rotate(45deg);
+      display: none;
+    } .copy-text1 button:after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      right: 25px;
+      width: 10px;
+      height: 10px;
+      background: #5c81dc;
+      transform: rotate(45deg);
+      display: none;
+    }
+    .copy-text.active button:before,
+    .copy-text.active button:after {
+      display: block;
+    } .copy-text1.active button:before,
+    .copy-text1.active button:after {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../image/ACM Logo Final.png" class="nav-img" alt="" />
+            ACM-YCCE
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="https://acmycce.in/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://acmycce.in/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://acmycce.in/events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://acmycce.in/achievement"
+                  >Achievements</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://acmycce.in/team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://acm-gazette.netlify.app/"
+                  >Blogs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://acmycce.in/#social"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- banner -->
+    <section id="banner">
+      <div
+        class="container-fluid"
+        id="banner-container"
+        style="background-color: rgba(0, 0, 0, 0.4)"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          play-inline
+          class="bg-clip"
+          src="https://assets.mixkit.co/videos/preview/mixkit-flying-through-a-virtual-world-of-artificial-intelligence-12254-large.mp4"
+        ></video>
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="banner-col">
+            <h3 class="Blogs-heading">
+              Excited to Give ANGULAR<br />
+              Another Shot? ( PART - I )            </h3>
+          </div>
+          <div class="col-md-6" id="banner-col2">
+            <img
+              class="img-responsive rounded mx-auto d-block acmlogo"
+              src="../image/ACM Logo Final.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="back">
+      <section class="Article_content">
+        <!-- Article card 1 -->
+        <!-- top heading -->
+        <div class="top_heading">
+          ⭐️ Student, CSE
+          <span>
+            <a
+              href="https://www.linkedin.com/in/hemanshu-anil-waghmare-50a7a3291"
+              class="follow_me"
+              target="_blank"
+              >Follow+</a
+            ></span
+          >
+        </div>
+        <!-- Right content  -->
+        <div class="card-details">
+          <!-- designation -->
+          <div class="designation">
+            <img
+              src="../blogsImg/AuthorImg/hemanshuWaghmare.png"
+              alt=""
+              class="designation-img"
+            />
+            <h6 class="designation-heading">Hemanshu Waghmare</h6>
+          </div>
+          <!-- card Heading  and img-->
+
+          <h4 class="card-heading">
+            Excited to Give ANGULAR <span class="hidden"><br /></span> Another 
+            Shot? ( PART - I )  
+          </h4>
+          <div class="date_added">
+            <span style="margin-right: 5px">Oct 23, 2023 </span>
+            <div class="dot"></div>
+            <span style="margin-left: 5px"> 8min read</span>
+          </div>
+        </div>
+        <!-- Article Display -->
+        <div class="article_display">
+          <p>
+            <b style="font-size:18px">Angular</b> is a free, open-source framework for frontend used
+            for making single-page web application which is based on typescript.
+            Getting started with an Angular application is quite easy and quick.
+            <br>
+          <br />
+          <b style="font-size:18px"> Step 1 : </b>Install Angular CLI (command line interface) by simply
+          running in your terminal / power shell.
+          <br />
+          <div class="copy-text">
+            <input
+              type="text"
+              class="text"
+              value="npm install -g @angular/cli"
+            />
+            <button><i class="fa fa-clone"></i></button>
+          </div>
+        </p>
+          <p> 
+          <b style="font-size:18px">Step 2 : </b>Create your Angular Project, as shown below.</p>
+          <div class="copy-text1">
+            <input
+              type="text"
+              class="text1"
+              value="ng new [ project_name ]"
+            />
+            <button><i class="fa fa-clone"></i></button>
+          </div>
+          <br />
+          <i style ="color: red; text-align : center"> ** Install required Angular packages and other functional <br/> 
+          dependencies, this might take couple of minutes. ** </i> 
+     
+          <p style="margin-top : 0px;"> 
+          <b style="font-size:18px">Step 3 : </b> To run and
+          develop your application locally run the following commands: 
+          <br/>
+          <div class="copy-text">
+            <textarea class="text2" name="message" style="overflow:hidden" readonly>cd [project_name ]  
+ng serve --open</textarea>    
+          </div>
+
+
+        </p>
+    
+          <p>
+            <b style="font-size : 18px">
+              Angular Components
+            </b>
+      
+            are the building blocks of an Angular
+            Application. While working on an Angular Application we build or
+            develop our app in bunch of components and attach them with parent
+            (app component) which is responsible for rendering angular application.
+            Each component consists of the following things:
+            <br/>
+            1) Html file    <br/>
+            2) Styling File   <br/>
+            3) Typescript File   <br/>
+            4) Spec File   <br/>
+            <br />
+            <span style="font-weight: bold; font-size : 20px; margin-top :10px">
+              Standalone Component
+            </span>
+            <br />
+            Released in <b>Angular 14</b>  and made stable in  <b>Angular 15</b>, you can delete
+all your module. <b>Modules</b>  in angular is a great concept (in theory) and it
+helps angular a lot in reducing the bundle size as different parts of your
+app get loaded. But overtime as your app grows you need to add more
+modules and eventually if you want to add or remove dependencies it is
+hard to tell which dependencies you put there to support which
+components, making the module difficult to read, maintain leading a
+mess.
+</p>
+<img style="width : 100%" src="../blogsImg/AuthorAssets/HemanshuWaghmare1.png" alt="" />
+
+<p>
+            <br />
+            With <b> standalone components</b> you can define / add all your
+dependencies right on your components itself, all you have to do is to
+define  <b> { standalone: true }</b>   on your <b> @Component( ) </b>  and let the magic
+happen for you.
+
+            <br />
+            <br />
+</p>
+            <img src="../blogsImg/AuthorAssets/HemanshuWaghmare2.png" style="width : 100%" alt="" />
+            <p>
+            <b> [ </b> In case, if you already have an angular app no worries you can still
+apply these changes and slowly remove these things from your
+<b>app.modules.ts</b> until they are empty and deletable <b> ] </b> .
+<br />
+<br />
+If ever got stuck in switching your angular app to standalone
+component, this Angular doc is highly recommended [https://
+angular.io/guide/standalone-components] for shifting to the latest
+version of Angular.
+<br />
+<br />
+          </p>
+        </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <section id="banner" class="footer">
+      <div class="container-fluid" id="banner-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-4" id="footer-col1">
+            <h3>Location</h3>
+            <p>
+              Yeshwantrao Chavan College of Engineering Hingna Road, Wanadongri,
+              Nagpur- 441110<br />
+              State : Maharashtra<br />
+              Country : India
+            </p>
+          </div>
+          <div class="col-md-4" id="footer-col2">
+            <h3>Contact Us</h3>
+
+            <p>Email Us- acmscycce@gmail.com</p>
+          </div>
+          <div class="col-md-4" id="footer-col2">
+            <h3>Design & Developed by</h3>
+
+            <p>Team ACM-YCCE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let copyText = document.querySelector('.copy-text');
+      copyText.querySelector('button').addEventListener('click', function () {
+        let input = copyText.querySelector('input.text');
+        input.select();
+        document.execCommand('copy');
+        copyText.classList.add('active');
+        window.getSelection().removeAllRanges();
+        setTimeout(function () {
+          copyText.classList.remove('active');
+        }, 2500);
+      });  
+      
+      let copyText1 = document.querySelector('.copy-text1');
+      copyText1.querySelector('button').addEventListener('click', function () {
+        let input = copyText1.querySelector('input.text1');
+        input.select();
+        document.execCommand('copy');
+        copyText1.classList.add('active');
+        window.getSelection().removeAllRanges();
+        setTimeout(function () {
+          copyText1.classList.remove('active');
+        }, 2500);
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+</html>
